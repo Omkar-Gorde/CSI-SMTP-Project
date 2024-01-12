@@ -1,0 +1,39 @@
+PowerPoint Template Setup:
+
+It opens a PowerPoint presentation (certificate.pptx).
+Retrieves the layout of the first slide.
+Loads participant data from an Excel file (Participant_Data.xlsx).
+
+
+Email Configuration:
+
+Specifies the sender's email address and password.
+Defines the email content template and subject.
+
+
+Certificate Generation:
+
+Iterates through each participant's data.
+Modifies the text elements on the PowerPoint slide with the corresponding participant data.
+Saves the modified PowerPoint presentation as a temporary file.
+Converts the temporary PowerPoint file to a PDF file.
+
+
+Email Sending:
+
+Constructs an email for each participant with a personalized message and attaches the generated PDF certificate.
+Uses Gmail SMTP server to send the emails.
+
+
+Cleanup:
+
+Removes the temporary PowerPoint file after converting it to PDF.
+
+
+Function Definitions:
+
+
+send_email: Sends an email with an attached certificate to a participant.
+
+
+PPTtoPDF: Converts a PowerPoint file to PDF.
